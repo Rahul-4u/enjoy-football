@@ -7,7 +7,6 @@ export default function MainLayout() {
   return (
     <div className="font-barlow">
       <Navbar />
-      <h1 className=" font-sora  text-lg text-red-600">hi</h1>
       <Outlet />
       {/* <Footer/> */}
     </div>
