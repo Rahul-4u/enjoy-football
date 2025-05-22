@@ -4,6 +4,7 @@ import HomeCard from '../components/home/HomeCard'
 import Experience from '../components/home/Experience'
 import ExperienceVideo from '../components/home/ExperienceVideo'
 import Sociales from '../components/home/Sociales'
+import Quierescontactar from '../components/home/Quierescontactar'
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
           <HomeCard />
           <Experience />
           <ExperienceVideo />
-          <Sociales/>
+      <Sociales />
+      <Quierescontactar/>
     </div>
   )
 }
