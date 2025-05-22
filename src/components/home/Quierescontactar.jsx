@@ -17,7 +17,8 @@ export default function Quierescontactar() {
         backgroundImage:
           "url('https://i.ibb.co/mFFV5wmC/Full-Size-Render-1-scaled.jpg')",
       }}
-    >
+      >
+          
       {/* Black overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent" />
 

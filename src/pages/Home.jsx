@@ -5,6 +5,7 @@ import Experience from '../components/home/Experience'
 import ExperienceVideo from '../components/home/ExperienceVideo'
 import Sociales from '../components/home/Sociales'
 import Quierescontactar from '../components/home/Quierescontactar'
+import Entidades from '../components/home/Entidades'
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
           <Experience />
           <ExperienceVideo />
       <Sociales />
-      <Quierescontactar/>
+      <Quierescontactar />
+      <Entidades/>
     </div>
   )
 }
