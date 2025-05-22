@@ -6,18 +6,18 @@ export default function Navbar() {
   return (
     <nav className="bg-black shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-20 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
               src="https://i.ibb.co/RGCvszhX/logo-web-x2-600x142.png"
               alt="Logo"
-              className="h-12 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-white hover:text-gray-300 font-medium">
               Home
             </a>
@@ -33,6 +33,16 @@ export default function Navbar() {
             >
               Campus
             </a>
+
+            {/* Flags (Desktop) */}
+            <div className="flex items-center space-x-2 ml-4">
+              <button className="text-xl hover:scale-110 transition-transform  hover:cursor-pointer">
+                <img src="https://i.ibb.co/Z1HmN5Ct/es.png" alt="" />
+              </button>
+              <button className="text-xl hover:scale-110 transition-transform hover:cursor-pointer">
+                <img src="https://i.ibb.co/zWzph39y/en.png" alt="" />
+              </button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -45,7 +55,6 @@ export default function Navbar() {
               aria-expanded={isOpen}
             >
               <span className="sr-only">Open main menu</span>
-              {/* Icon when menu is closed */}
               {!isOpen ? (
                 <svg
                   className="block h-6 w-6"
@@ -64,7 +73,6 @@ export default function Navbar() {
                   />
                 </svg>
               ) : (
-                /* Icon when menu is open */
                 <svg
                   className="block h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,6 +117,16 @@ export default function Navbar() {
             >
               Campus
             </a>
+          </div>
+
+          {/* Mobile Flags */}
+          <div className="px-4 py-2 flex gap-4 bg-black">
+            <button className="text-xl hover:scale-110 transition-transform  hover:cursor-pointer">
+              <img src="https://i.ibb.co/Z1HmN5Ct/es.png" alt="" />
+            </button>
+            <button className="text-xl hover:scale-110 transition-transform hover:cursor-pointer">
+              <img src="https://i.ibb.co/zWzph39y/en.png" alt="" />
+            </button>
           </div>
         </div>
       )}
