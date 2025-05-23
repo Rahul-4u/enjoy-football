@@ -5,6 +5,7 @@ import OurCamps from '../components/campus/OurCamps'
 import SemanaSanta from '../components/campus/SemanaSanta'
 import Internacionales from '../components/campus/Internacionales'
 import Verano from '../components/campus/Verano'
+import CampusForm from '../components/campus/CampusForm'
 
 export default function Campus() {
   return (
@@ -18,6 +19,7 @@ export default function Campus() {
         <Verano/>
         <Internacionales />
       </div>
+      <CampusForm/>
     </div>
   );
 }
