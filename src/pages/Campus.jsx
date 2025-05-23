@@ -4,6 +4,7 @@ import Campamentos from '../components/campus/Campamentos'
 import OurCamps from '../components/campus/OurCamps'
 import SemanaSanta from '../components/campus/SemanaSanta'
 import Internacionales from '../components/campus/Internacionales'
+import Verano from '../components/campus/Verano'
 
 export default function Campus() {
   return (
@@ -14,6 +15,7 @@ export default function Campus() {
       <div className="bg-gradient-to-r from-purple-700 to-red-700">
         {" "}
         <SemanaSanta />
+        <Verano/>
         <Internacionales />
       </div>
     </div>
