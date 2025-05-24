@@ -4,9 +4,9 @@ import React from "react";
 
 const Verano = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-16 py-12  text-white">
+    <section className="flex  md:flex-row items-center flex-col-reverse justify-between min-h-screen px-6 md:px-16 py-12  text-white">
       {/* Right section */}
-      <div className="w-full md:w-1/2 flex flex-col justify-end items-start ">
+      <div className="w-full md:w-1/2 flex flex-col  justify-end items-start ">
         <img
           src="https://i.ibb.co/Zzg312SL/architecture-g108fb9059-1920.jpg"
           alt="Semana Santa"
@@ -24,7 +24,7 @@ const Verano = () => {
         <div className="relative z-10">
           <h2 className="text-4xl font-semibold my-12">Verano</h2>
 
-          <div className="text-4xl mb-6 flex items-end justify-center">
+          <div className="text-4xl mb-6 flex  items-end justify-center">
             <span className="text-2xl  text-white">
               <FontAwesomeIcon icon={faUmbrellaBeach} size="0.02x" />
             </span>
