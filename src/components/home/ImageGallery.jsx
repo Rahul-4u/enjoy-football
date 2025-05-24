@@ -81,7 +81,7 @@ export default function ImageGallery() {
             <img
               src={src}
               alt={`Imagen ${index + 1}`}
-              className="w-full h-32 object-cover rounded"
+              className="w-full lg:h-10 h-32 object-cover rounded"
             />
           </a>
         ))}

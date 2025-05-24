@@ -5,6 +5,8 @@ import {
   FaWhatsapp,
   FaInstagram,
 } from "react-icons/fa";
+import { MdPhoneIphone } from "react-icons/md";
+
 
 export default function Sociales() {
   return (
@@ -19,9 +21,9 @@ export default function Sociales() {
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent" />
 
       {/* Main container */}
-      <div className="relative z-10 max-w-[1440px] mx-auto w-full px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="relative z-10 max-w-[1440px] mx-auto w-full px-4 md:px-8 flex flex-col md:flex-row items-start justify-between gap-10">
         {/* Left side - Location */}
-        <div className="flex flex-col items-center text-center md:text-left gap-5 w-full md:w-1/2">
+        <div className="flex flex-col items-center justify-center text-center md:text-left gap-5 w-full md:w-1/2">
           <img
             className="w-10 h-10"
             src="https://i.ibb.co/Ld7s1gbD/kisspng-american-football-computer-icons-clip-art-malta-football-association-5b52cf01abd4b7-77010194.png"
@@ -40,12 +42,9 @@ export default function Sociales() {
         </div>
 
         {/* Right side - Social Icons */}
-        <div className="flex flex-col items-center text-center md:text-left gap-5 w-full md:w-1/2">
-          <img
-            className="w-10 h-10"
-            src="https://i.ibb.co/Ld7s1gbD/kisspng-american-football-computer-icons-clip-art-malta-football-association-5b52cf01abd4b7-77010194.png"
-            alt="Football Icon"
-          />
+        <div className="flex flex-col items-center text-6xl text-red-500 text-center md:text-left gap-5 w-full md:w-1/2">
+          <MdPhoneIphone />
+
           <p className="text-yellow-300 text-2xl md:text-3xl font-bold">
             Nuestras Redes Sociales
           </p>

@@ -10,7 +10,7 @@ export default function Entidades() {
   ];
 
   return (
-    <div className="px-4 py-8 max-w-[1440px] mx-auto">
+    <div className="px-4 py-8  max-w-[1440px] mx-auto">
       <h2 className="text-2xl text-[18px]  hover:text-sky-600 mb-6 text-start">
         Entidades con las que colaboramos:
       </h2>

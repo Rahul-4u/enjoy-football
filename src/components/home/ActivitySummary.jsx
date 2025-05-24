@@ -72,16 +72,30 @@ export default function ActivitySummary() {
           </div>
 
           {/* Campamentos */}
+
           <div className="flex flex-col items-center text-center">
             <span className="text-red-600 text-5xl mb-2">
               <FaPencilAlt />
             </span>
             <h1 className="text-[27px] font-semibold mb-4">Campamentos</h1>
-            <img
-              className="max-w-full h-auto rounded shadow"
-              src="https://i.ibb.co/x8f9qNR7/campus.png"
-              alt="campus"
-            />
+
+            <div
+              className="inline-block p-0.5  text-red-600 rounded z-0 shadow"
+              style={{
+                backgroundImage: "url(https://i.ibb.co/qM2w22jw/mask-1.png)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                filter:
+                  "invert(22%)  hue-rotate(15deg) brightness(130%) contrast(81%)",
+              }}
+            >
+              <img
+                src="https://i.ibb.co/x8f9qNR7/campus.png"
+                alt="campus"
+                className="max-w-full h-auto rounded brightness-150 z-10"
+              />
+            </div>
           </div>
         </div>
       </div>
