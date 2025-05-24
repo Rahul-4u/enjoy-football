@@ -10,15 +10,15 @@ import ActivitySummary from '../components/home/ActivitySummary'
 
 export default function Home() {
   return (
-      <div>
-          <HomeBanner />
-          <HomeCard />
-          <Experience />
-          <ExperienceVideo />
+    <div className="overflow-x-hidden">
+      <HomeBanner />
+      <HomeCard />
+      <Experience />
+      <ExperienceVideo />
       <Sociales />
-      <ActivitySummary/>
+      <ActivitySummary />
       <Quierescontactar />
-      <Entidades/>
+      <Entidades />
     </div>
-  )
+  );
 }

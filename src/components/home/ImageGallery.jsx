@@ -12,7 +12,7 @@ import "lightgallery/css/lg-zoom.css";
 
 export default function ImageGallery() {
   const galleryRef = useRef(null);
-  const lgInstance = useRef(null); // store lightGallery instance
+  const lgInstance = useRef(null); 
 
   const images = [
     "https://i.ibb.co/PZNNHRd1/38c8ff04-788f-4f6b-bf23-80ac7e7fe391.jpg",
@@ -68,17 +68,20 @@ export default function ImageGallery() {
       <h2 className="text-2xl font-semibold text-center mb-6">
         Galería de Imágenes
       </h2>
-      <div ref={galleryRef} className="grid grid-cols-6 gap-4">
+      <div
+        ref={galleryRef}
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+      >
         {images.slice(0, 24).map((src, index) => (
           <a
             href={src}
             key={index}
-            className="block rounded overflow-hidden shadow hover:shadow-lg transition"
+            className="block overflow-hidden hover:shadow-lg transition"
           >
             <img
               src={src}
               alt={`Imagen ${index + 1}`}
-              className="w-full h-10 object-contain"
+              className="w-full h-32 object-cover rounded"
             />
           </a>
         ))}

@@ -18,7 +18,7 @@ export default function HomeCard() {
   ];
 
   return (
-    <section className="lg:h-[500px] md:h-[800px] h-[890px] relative bg-gradient-to-tl from-red-600 to-white">
+    <section className="lg:h-[500px] md:h-[800px] h-[890px] relative  bg-gradient-to-tl from-red-600 to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 lg:-translate-y-1/6 md:-translate-y-1/16 -translate-y-1/40 w-full px-6 max-w-[1440px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {cards.map((card) => (

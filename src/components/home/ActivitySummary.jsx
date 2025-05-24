@@ -8,9 +8,9 @@ export default function ActivitySummary() {
       {/* main section  start*/}
       <div className="max-w-[1440px] mx-auto my-10">
         {/* Nuestras Puntuaciones */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-8">
           {/* Nuestras Puntuaciones */}
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-start">
             <span className="text-red-600 text-5xl mb-2">
               <FaPencilAlt />
             </span>
@@ -25,7 +25,7 @@ export default function ActivitySummary() {
                   ¿Está content@ con la Actividad que EnjoyFootball desarrolla
                   en su club/colegio?
                 </p>
-                <div className="flex gap-2 items-center justify-center my-2">
+                <div className="flex gap-2  justify-start my-2">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-xl text-amber-500" />
                   ))}
@@ -38,7 +38,7 @@ export default function ActivitySummary() {
                   ¿Como puntuaría el ambiente durante las sesiones de
                   entrenamiento?
                 </p>
-                <div className="flex gap-2 items-center justify-center my-2">
+                <div className="flex gap-2 items-center justify-start my-2">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-xl text-amber-500" />
                   ))}
@@ -50,7 +50,7 @@ export default function ActivitySummary() {
                 <p className="text-[20px] text-gray-600">
                   ¿Cómo califica el trato por parte de los entrenadores?
                 </p>
-                <div className="flex gap-2 items-center justify-center my-2">
+                <div className="flex gap-2 items-center justify-start my-2">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-xl text-amber-500" />
                   ))}

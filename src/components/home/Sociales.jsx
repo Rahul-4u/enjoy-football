@@ -9,7 +9,7 @@ import {
 export default function Sociales() {
   return (
     <div
-      className="md:h-[600px] h-auto w-full bg-cover bg-center relative flex items-center py-10 md:py-0"
+      className="bg-cover bg-center relative py-10 md:py-20"
       style={{
         backgroundImage:
           "url('https://i.ibb.co/kgYxbJPn/grass-2616911-1920.jpg')",
@@ -19,53 +19,53 @@ export default function Sociales() {
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent" />
 
       {/* Main container */}
-      <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 relative z-10 flex flex-col md:flex-row justify-between items-center gap-10">
-        {/* Left side - Content */}
-        <div className="flex flex-col items-center gap-4 text-center">
+      <div className="relative z-10 max-w-[1440px] mx-auto w-full px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+        {/* Left side - Location */}
+        <div className="flex flex-col items-center text-center md:text-left gap-5 w-full md:w-1/2">
           <img
             className="w-10 h-10"
             src="https://i.ibb.co/Ld7s1gbD/kisspng-american-football-computer-icons-clip-art-malta-football-association-5b52cf01abd4b7-77010194.png"
             alt="Football Icon"
           />
-          <p className="text-yellow-300 text-[24px] md:text-[27px] font-bold">
-            ¿Donde Estamos?
+          <p className="text-yellow-300 text-2xl md:text-3xl font-bold">
+            ¿Dónde Estamos?
           </p>
-          <div className="max-w-[650px] w-full px-4 md:px-0">
+          <div className="w-full max-w-[600px]">
             <img
               src="https://i.ibb.co/YBMGmtS0/mapofworld-1200x719.png"
               alt="Map"
-              className="w-full h-auto rounded-md"
+              className="w-full h-auto rounded-md shadow"
             />
           </div>
         </div>
 
         {/* Right side - Social Icons */}
-        <div className="flex flex-col items-center gap-4 text-center">
+        <div className="flex flex-col items-center text-center md:text-left gap-5 w-full md:w-1/2">
           <img
             className="w-10 h-10"
             src="https://i.ibb.co/Ld7s1gbD/kisspng-american-football-computer-icons-clip-art-malta-football-association-5b52cf01abd4b7-77010194.png"
             alt="Football Icon"
           />
-          <p className="text-yellow-300 text-[24px] md:text-[27px] font-bold">
+          <p className="text-yellow-300 text-2xl md:text-3xl font-bold">
             Nuestras Redes Sociales
           </p>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-2 text-white text-[26px]">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 text-white text-[26px]">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <FaFacebookF className="hover:text-blue-500 bg-blue-800 p-2 w-10 h-10 rounded-sm transition" />
+              <FaFacebookF className="hover:text-blue-400 bg-blue-800 p-2 w-10 h-10 rounded-sm transition" />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noreferrer">
-              <FaYoutube className="hover:text-red-500 bg-red-600 p-2 w-10 h-10 rounded-sm transition" />
+              <FaYoutube className="hover:text-red-400 bg-red-600 p-2 w-10 h-10 rounded-sm transition" />
             </a>
             <a
               href="https://wa.me/your-number"
               target="_blank"
               rel="noreferrer"
             >
-              <FaWhatsapp className="hover:text-green-500 bg-green-600 p-2 w-10 h-10 rounded-sm transition" />
+              <FaWhatsapp className="hover:text-green-400 bg-green-600 p-2 w-10 h-10 rounded-sm transition" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <FaInstagram className="hover:text-pink-500 bg-pink-500 p-2 w-10 h-10 rounded-sm transition" />
+              <FaInstagram className="hover:text-pink-400 bg-pink-600 p-2 w-10 h-10 rounded-sm transition" />
             </a>
           </div>
         </div>

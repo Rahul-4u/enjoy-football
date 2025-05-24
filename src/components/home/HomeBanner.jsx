@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function HomeBanner() {
   return (
     <div
-      className="md:h-[600px] h-[450px] w-full   bg-cover bg-center relative brightness-120 flex items-center"
+      className="md:h-[600px] h-[450px] w-full   bg-cover bg-center  relative brightness-120 flex items-center"
       style={{
         backgroundImage:
           "url('https://i.ibb.co/kgYxbJPn/grass-2616911-1920.jpg')",
