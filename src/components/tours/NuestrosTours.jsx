@@ -130,7 +130,7 @@ export default function NuestrosTours() {
   return (
     <>
       <div className="max-w-[1440px] mx-auto">
-        <h1 className="text-[27px] text-black  font-semibold mt-5">Nuestro Catalogo de Tours:</h1>
+        <h1 className="text-[27px] text-black  font-semibold mt-5 md:px-10 px-5">Nuestro Catalogo de Tours:</h1>
         <div className=" grid grid-cols-1 md:grid-cols-3 my-20  px-5 gap-5">
           {data.map((card, index) => (
             <FlipCard key={index} card={card} />

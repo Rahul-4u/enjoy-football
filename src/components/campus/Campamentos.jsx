@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Campamentos() {
   return (
-    <div className="relative py-0 h-screen px-4 sm:px-8">
+    <div className="relative py-0 lg:mb-10 px-4 sm:px-8">
       <div className="max-w-[1440px] mx-auto h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
           {/* Banner Image */}
@@ -15,8 +15,8 @@ export default function Campamentos() {
           </div>
 
           {/* Content section  */}
-          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col justify-center h-full">
-            <div className="p-6 rounded-lg shadow-lg relative bg-white flex flex-col space-y-5">
+          <div className="col-span-1 lg:col-span-6  md:my-10 z-10 flex  flex-col justify-center h-full">
+            <div className="p-2 relative  flex flex-col space-y-5">
               <h1 className="text-red-500 text-2xl sm:text-[28px]">
                 Enjoy Football
               </h1>

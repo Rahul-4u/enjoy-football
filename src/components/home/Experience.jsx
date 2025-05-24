@@ -55,7 +55,7 @@ export default function Experience() {
   const { text, author, role, image } = testimonials[currentIndex];
 
   return (
-    <div ref={sectionRef} className="relative py-0 lg:h-screen px-4 sm:px-8">
+    <div ref={sectionRef} className="relative py-0 px-4 sm:px-8">
       <div className="max-w-[1440px] mx-auto h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
           {/* Left Side Image with Animation */}

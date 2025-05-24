@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { IoAirplane } from "react-icons/io5";
+import { IoArrowRedoSharp } from "react-icons/io5";
+
+
 
 const testimonials = [
   {
@@ -39,9 +42,9 @@ export default function ToursExperience() {
   const { text, author, role, image } = testimonials[currentIndex];
 
   return (
-    <div className="relative py-0 h-screen px-4 sm:px-8">
+    <div className="relative py-0  px-4 sm:px-8 ">
       <div className="max-w-[1440px] mx-auto h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:mb-5 h-full">
           <div className="hidden lg:block lg:col-span-6 relative h-full">
             <img
               src="https://i.ibb.co/Gvp2S4rC/31a1a0ee-9ca2-4a7c-bfda-e848d37bec6e.jpg"
@@ -51,8 +54,8 @@ export default function ToursExperience() {
           </div>
 
           {/* Content section  */}
-          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col justify-center h-full">
-            <div className="p-6 rounded-lg shadow-lg relative bg-white">
+          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col  my-5 justify-center h-full">
+            <div className="p-6 relative flex flex-col space-y-10 ">
               <h1 className="text-red-500 text-2xl sm:text-[28px]">
                 Enjoy Football
               </h1>
@@ -69,7 +72,7 @@ export default function ToursExperience() {
               </p>
 
               {/* Testimonial */}
-              <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+              <div className=" p-6 ">
                 <p className="text-gray-800 italic mb-6 text-lg sm:text-[24px]">
                   "{text}"
                 </p>
@@ -84,6 +87,11 @@ export default function ToursExperience() {
                     <p className="text-gray-500 text-xs sm:text-sm">{role}</p>
                   </div>
                 </div>
+                <button className="btn flex md:items-center items-start gap-2 bg-red-500 my-10 px-8  py-4  rounded-4xl text-white text-[18px]">
+                  {" "}
+                  <IoArrowRedoSharp className="text-3xl" />
+                  InFormate
+                </button>
               </div>
             </div>
           </div>

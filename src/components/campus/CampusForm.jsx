@@ -4,7 +4,7 @@ import { HiMail } from 'react-icons/hi';
 export default function CampusForm() {
   return (
     <div>
-          <div className=" max-w-[1440px] mx-auto p-6 h-screen flex flex-col justify-center">
+          <div className=" max-w-[1440px] mx-auto p-6 lg:h-screen flex flex-col justify-center">
               <span className="text-red-600 text-7xl ">
                           <HiMail />
                         </span>

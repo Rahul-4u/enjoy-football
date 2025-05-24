@@ -12,7 +12,7 @@ export default function Navbar() {
             <img
               src="https://i.ibb.co/RGCvszhX/logo-web-x2-600x142.png"
               alt="Logo"
-              className="h-16 w-auto object-contain"
+              className="md:h-16 h-10 w-auto object-contain"
             />
           </div>
 
