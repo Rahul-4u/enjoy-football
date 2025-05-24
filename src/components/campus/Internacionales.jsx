@@ -4,9 +4,9 @@ import React from "react";
 
 const Internacionales = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-16 py-12  text-white">
+    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 md:px-16 py-12  text-white">
       {/* Left section */}
-      <div className="relative w-full md:w-1/2 mb-10 md:mb-0">
+      <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0">
         {/* Transparent number */}
         <h1 className="absolute text-[12rem] top-[-40px] left-0 text-white/30 font-bold leading-none select-none z-0">
           3
@@ -35,11 +35,11 @@ const Internacionales = () => {
       </div>
 
       {/* Right section */}
-      <div className="w-full md:w-1/2 flex flex-col justify-end items-end ">
+      <div className="w-full lg:w-1/2 flex flex-col justify-end items-end ">
         <img
           src="https://i.ibb.co/Zzg312SL/architecture-g108fb9059-1920.jpg"
           alt="Semana Santa"
-          className="md:w-3/4 w-full h-full md:h-[550px] object-cover  rounded-xl md:rounded-br-[100px] rounded-br-[50px]"
+          className="lg:w-3/4 w-full h-full lg:h-[550px] object-cover  rounded-xl lg:rounded-br-[100px] rounded-br-[50px]"
         />
       </div>
     </section>

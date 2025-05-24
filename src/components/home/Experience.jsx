@@ -55,9 +55,9 @@ export default function Experience() {
   const { text, author, role, image } = testimonials[currentIndex];
 
   return (
-    <div ref={sectionRef} className="relative py-0 px-4 sm:px-8">
-      <div className="max-w-[1440px] mx-auto h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
+    <div ref={sectionRef} className="relative py-0 md:px-20 lg:px-0 ">
+      <div className="w-full mx-auto h-full ">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12  h-full">
           {/* Left Side Image with Animation */}
           <motion.div
             className="hidden lg:block lg:col-span-6 relative h-full"
@@ -67,21 +67,21 @@ export default function Experience() {
             <img
               src="https://i.ibb.co/W4SWnMh4/PHOTO-2021-03-11-11-11-37-2.jpg"
               alt="experience"
-              className="rounded img-div h-full w-auto object-cover absolute top-0 left-0 z-0 -translate-y-7"
+              className="rounded rounded-br-[40px] img-div h-full w-full object-cover object-left  absolute top-0 left-0 z-0 -translate-y-15"
             />
           </motion.div>
 
           {/* Right Content Section with Animation */}
           <motion.div
-            className="col-span-1 lg:col-span-6 z-10 flex flex-col justify-center h-full"
+            className="col-span-1 lg:col-span-6 z-10 flex flex-col lg:my-5 justify-center h-full"
             initial={{ x: 100, opacity: 0 }}
             animate={rightControls}
           >
-            <div className="p-6   relative bg-white flex md:space-y-10 flex-col">
-              <h1 className="text-red-500 text-2xl sm:text-[28px]">
+            <div className="px-6  lg:mx-16 my-14 relative bg-white flex lg:space-y-6 space-y-4 flex-col">
+              <h1 className="text-red-500 text-2xl text-[28px]">
                 EnjoyFootball Experience
               </h1>
-              <h1 className="text-4xl sm:text-[62px]  leading-tight">
+              <h1 className="text-4xl lg:text-[62px] md:text-[55px] text-[47px]   leading-tight">
                 Programa Residencial España
               </h1>
               <p className="text-gray-400 text-lg sm:text-[23px] mb-4">

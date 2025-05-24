@@ -7,7 +7,7 @@ export default function Tours() {
   return (
       <div>
           <ToursBanner />
-          <ToursExperience />
+      <ToursExperience />
           <NuestrosTours/> 
     </div>
   )

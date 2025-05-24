@@ -42,20 +42,21 @@ export default function ToursExperience() {
   const { text, author, role, image } = testimonials[currentIndex];
 
   return (
-    <div className="relative py-0  px-4 sm:px-8 ">
-      <div className="max-w-[1440px] mx-auto h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:mb-5 h-full">
+    <div className="relative py-0  md:px-15 lg:px-0">
+      <div className="w-full mx-auto h-full ">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12  h-full">
+          {/* Left Side Image with Animation */}
           <div className="hidden lg:block lg:col-span-6 relative h-full">
             <img
               src="https://i.ibb.co/Gvp2S4rC/31a1a0ee-9ca2-4a7c-bfda-e848d37bec6e.jpg"
               alt="experience"
-              className="rounded img-div h-full w-auto object-cover absolute top-0 left-0 z-0 -translate-y-7"
+              className="rounded rounded-br-[40px] img-div h-full w-full object-cover   absolute top-0 left-0 z-0 -translate-y-15"
             />
           </div>
 
           {/* Content section  */}
-          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col  my-5 justify-center h-full">
-            <div className="p-6 relative flex flex-col space-y-10 ">
+          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col lg:my-5 justify-center h-full">
+            <div className="px-6  lg:mx-16 my-14 relative bg-white flex md:space-y-6 space-y-4 flex-col">
               <h1 className="text-red-500 text-2xl sm:text-[28px]">
                 Enjoy Football
               </h1>
