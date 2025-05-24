@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
+import { IoArrowRedoSharp } from "react-icons/io5";
 
 const testimonials = [
   {
@@ -76,7 +77,7 @@ export default function Experience() {
             initial={{ x: 100, opacity: 0 }}
             animate={rightControls}
           >
-            <div className="p-6 rounded-lg shadow-lg relative bg-white flex md:space-y-10 flex-col">
+            <div className="p-6   relative bg-white flex md:space-y-10 flex-col">
               <h1 className="text-red-500 text-2xl sm:text-[28px]">
                 EnjoyFootball Experience
               </h1>
@@ -91,7 +92,7 @@ export default function Experience() {
               </h1>
 
               {/* Testimonial */}
-              <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+              <div className=" p-6 ">
                 <p className="text-gray-800 italic mb-6 text-lg sm:text-[24px]">
                   "{text}"
                 </p>
@@ -106,6 +107,11 @@ export default function Experience() {
                     <p className="text-gray-500 text-xs sm:text-sm">{role}</p>
                   </div>
                 </div>
+                <button className="btn flex md:items-center items-start gap-2 bg-red-500 my-10 px-8  py-4  rounded-4xl text-white text-[18px]">
+                  {" "}
+                  <IoArrowRedoSharp className="text-3xl" />
+                  InFormate
+                </button>
               </div>
             </div>
           </motion.div>
