@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const testimonials = [
   {
@@ -27,36 +29,58 @@ const testimonials = [
 export default function Experience() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false }); // scroll korlei fire korbe
+  const leftControls = useAnimation();
+  const rightControls = useAnimation();
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
-
     return () => clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    if (isInView) {
+      leftControls.start({ x: 0, opacity: 1, transition: { duration: 0.8 } });
+      rightControls.start({ x: 0, opacity: 1, transition: { duration: 0.8 } });
+    } else {
+      leftControls.start({ x: -100, opacity: 0 });
+      rightControls.start({ x: 100, opacity: 0 });
+    }
+  }, [isInView]);
 
   const { text, author, role, image } = testimonials[currentIndex];
 
   return (
-    <div className="relative py-0 h-screen px-4 sm:px-8">
+    <div ref={sectionRef} className="relative py-0 h-screen px-4 sm:px-8">
       <div className="max-w-[1440px] mx-auto h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
-         
-          <div className="hidden lg:block lg:col-span-6 relative h-full">
+          {/* Left Side Image with Animation */}
+          <motion.div
+            className="hidden lg:block lg:col-span-6 relative h-full"
+            initial={{ x: -100, opacity: 0 }}
+            animate={leftControls}
+          >
             <img
               src="https://i.ibb.co/W4SWnMh4/PHOTO-2021-03-11-11-11-37-2.jpg"
               alt="experience"
               className="rounded img-div h-full w-auto object-cover absolute top-0 left-0 z-0 -translate-y-7"
             />
-          </div>
+          </motion.div>
 
-          {/* Content section  */}
-          <div className="col-span-1 lg:col-span-6 z-10 flex flex-col justify-center h-full">
-            <div className="p-6 rounded-lg shadow-lg relative bg-white">
+          {/* Right Content Section with Animation */}
+          <motion.div
+            className="col-span-1 lg:col-span-6 z-10 flex flex-col justify-center h-full"
+            initial={{ x: 100, opacity: 0 }}
+            animate={rightControls}
+          >
+            <div className="p-6 rounded-lg shadow-lg relative bg-white flex md:space-y-10 flex-col">
               <h1 className="text-red-500 text-2xl sm:text-[28px]">
                 EnjoyFootball Experience
               </h1>
-              <h1 className="text-4xl sm:text-[62px] font-bold leading-tight">
+              <h1 className="text-4xl sm:text-[62px]  leading-tight">
                 Programa Residencial España
               </h1>
               <p className="text-gray-400 text-lg sm:text-[23px] mb-4">
@@ -84,7 +108,7 @@ export default function Experience() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

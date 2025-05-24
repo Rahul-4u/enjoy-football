@@ -1,49 +1,49 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function HomeCard() {
+  const cards = [
+    {
+      id: 1,
+      image: "https://i.ibb.co/Pzz4P05c/IMG-0798.jpg",
+    },
+    {
+      id: 2,
+      image: "https://i.ibb.co/5WK402jd/IMG-0190.jpg",
+    },
+    {
+      id: 3,
+      image: "https://i.ibb.co/Q3xqQTtx/IMG-0504.jpg",
+    },
+  ];
+
   return (
-    <section className=" lg:h-[500px] md:h-[800px]  h-[890px] relative  bg-gradient-to-tl from-red-600 to-white">
+    <section className="lg:h-[500px] md:h-[800px] h-[890px] relative bg-gradient-to-tl from-red-600 to-white">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Absolute Cards */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 lg:-translate-y-1/6 md:-translate-y-1/16 -translate-y-1/40 w-full px-6 max-w-[1440px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {/* Card 1 */}
-          <div
-            className="relative bg-cover bg-center h-64 md:h-96 md:w- rounded-md md:rounded-br-[50px]  rounded-br-[30px] overflow-hidden shadow-md hover:shadow-xl transition"
-            style={{
-              backgroundImage: "url('https://i.ibb.co/Pzz4P05c/IMG-0798.jpg')",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/50 flex flex-col justify-end items-start p-6 text-white">
-              <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p>Get your orders within 24 hours.</p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div
-            className="relative bg-cover bg-center h-64 md:h-96 md:w- rounded-md md:rounded-br-[50px] rounded-br-[30px]  overflow-hidden shadow-md hover:shadow-xl transition"
-            style={{
-              backgroundImage: "url('https://i.ibb.co/5WK402jd/IMG-0190.jpg')",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/50 flex flex-col justify-end items-start p-6 text-white">
-              <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p>Get your orders within 24 hours.</p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div
-            className="relative bg-cover bg-center h-64 md:h-96 md:w- rounded-md md:rounded-br-[50px] rounded-br-[30px]  overflow-hidden shadow-md hover:shadow-xl transition"
-            style={{
-              backgroundImage: "url('https://i.ibb.co/Q3xqQTtx/IMG-0504.jpg')",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/50 flex flex-col justify-end items-start p-6 text-white">
-              <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p>Get your orders within 24 hours.</p>
-            </div>
-          </div>
+          {cards.map((card) => (
+            <motion.div
+              key={card.id}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="relative brightness-150  transform hover:scale-105 hover:-translate-y-2 duration-500 ease-in-out  bg-cover bg-center h-64 md:h-96 rounded-md md:rounded-br-[50px] rounded-br-[30px] overflow-hidden shadow-md hover:shadow-xl transition"
+              style={{
+                backgroundImage: `url('${card.image}')`,
+              }}
+            >
+              <div className="absolute inset-0 bg-black/50 flex flex-col justify-end items-start p-6 text-white">
+                <div className="md:my-15">
+                  <h3 className="md:text-4xl text-3xl font-semibold mb-2">
+                    EnjoyFootBall Experience
+                  </h3>
+                  <p className="text-2xl text-yellow-500">
+                    Look good, feel good
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
