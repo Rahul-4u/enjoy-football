@@ -34,7 +34,7 @@ const FlipCard = ({ card }) => {
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full rounded-xl bg-white text-gray-800 flex flex-col items-start justify-center p-4 shadow-lg backface-hidden rotate-y-180 overflow-auto">
+        <div className="absolute w-full h-full rounded-xl bg-gray-200 text-gray-800 flex flex-col items-start justify-center p-4 shadow-lg backface-hidden rotate-y-180 overflow-auto">
           <h3 className="text-lg font-semibold mb-2">
             {card.title || "No Title"}
           </h3>
