@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white px-6 py-10">
+    <footer className="bg-black text-white px-6 py-10">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Logo & Social Icons */}
         <div className="flex flex-col items-center text-center space-y-6">
@@ -41,9 +41,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ENLACES DE INTERES */}
+        {/*-------- ENLACES section ----------*/}
         <div className="text-center md:text-left">
-          <h3 className="text-[23px] mb-4 font-semibold">ENLACES DE INTERES</h3>
+          <h3 className="text-[23px] mb-4 font-semibold text-center">ENLACES DE INTERES</h3>
           <ul className="space-y-2 text-[18px]">
             <li>
               <a href="#" className="hover:text-yellow-400 transition">
@@ -68,8 +68,8 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* CONTACTO */}
-        <div className="text-center md:text-left">
+        {/* CONTACTO section  */}
+        <div className="text-center ">
           <h3 className="text-[23px] mb-4 font-semibold">CONTACTO</h3>
           <ul className="space-y-2 text-[18px]">
             <li>Movil: +34.695.048.265</li>

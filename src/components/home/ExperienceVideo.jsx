@@ -37,7 +37,7 @@ export default function ExperienceVideo() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-10">
         {videoData.map((url, index) => (
-          <div key={index} className=" rounded-lg text-center lg:p-4 md:p-10 p-2 ">
+          <div key={index} className=" rounded-lg text-center  cursor-pointer lg:p-4 md:p-10 p-2 ">
             <div className="aspect-video  mb-28 relative">
               <img
                 src={url.img}

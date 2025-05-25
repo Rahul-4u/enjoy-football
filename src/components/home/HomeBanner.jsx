@@ -19,14 +19,12 @@ export default function HomeBanner() {
       <div className="max-w-[1440px] mx-auto w-full px-12 md:px-12 relative z-10 flex justify-between items-center">
         {/* Left side - Content */}
         <motion.div
-          className="text-white max-w-xl text-left "
+          className="text-white max-w-xl text-left felx flex-col space-y-20  "
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-red-500  space-y-7  text-[27px] mb-2">
-            EnjoyFootball
-          </p>
+          <p className="text-red-500   text-[27px] mb-2">EnjoyFootball</p>
           <h1 className="text-4xl md:text-[75px]  mb-4">Tu mejor versión</h1>
           <p className="text-lg text-gray-300 mb-6">
             Ven a ver el catálogo de nuestros Tours.
