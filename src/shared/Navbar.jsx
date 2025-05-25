@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
     <nav className="bg-black shadow-md">
@@ -17,23 +18,37 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-white hover:text-gray-300 font-medium">
+          <div className="hidden md:flex items-center text-[18px] space-x-8">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-medium"
+                  : "text-gray-400 hover:text-gray-300 font-medium"
+              }
+            >
               Home
-            </a>
-            <a
-              href="/tours"
-              className="text-white hover:text-gray-300 font-medium"
+            </NavLink>{" "}
+            <NavLink
+              to="/tours"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-medium"
+                  : " text-gray-400 hover:text-gray-300 font-medium"
+              }
             >
               Tours
-            </a>
-            <a
-              href="/campus"
-              className="text-white hover:text-gray-300 font-medium"
+            </NavLink>{" "}
+            <NavLink
+              to="/campus"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-medium"
+                  : " text-gray-400 hover:text-gray-300 font-medium"
+              }
             >
               Campus
-            </a>
-
+            </NavLink>
             {/* Flags (Desktop) */}
             <div className="flex items-center space-x-2 ml-4">
               <button className="text-xl hover:scale-110 transition-transform  hover:cursor-pointer">

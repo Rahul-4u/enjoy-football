@@ -49,7 +49,7 @@ export default function OurCamps() {
         {camps.map((camp, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center gap-4 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+            className="flex flex-col items-center justify-center gap-4 p-6  hover:scale-105 transition-transform duration-300"
           >
             <div >{camp.icon}</div>
             <h3 className="text-[27px] font-bold text-gray-900">{camp.title}</h3>

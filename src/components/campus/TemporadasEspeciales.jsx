@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function TemporadasEspeciales() {
   return (
     <div className="bg-gradient-to-tl from-blue-800 via-sky-400 to-red-700  px-4 md:px-16 py-12 text-white h-auto">
-      {/* For laptop: normal sections */}
+      {/* ----normal sections-------- */}
       <div
         className="hidden max-w-[1440px] mx-auto my-10
        lg:block space-y-32"
@@ -71,7 +71,7 @@ export default function TemporadasEspeciales() {
           {/* Right image */}
           <div className="w-1/2 flex justify-start">
             <img
-              src="https://i.ibb.co/BHCXC5pY/map-gb395d3750-1920-1.jpg"
+              src="https://i.ibb.co/SXpPkpJL/beach-g6583af003-1920-1.jpg"
               alt="Verano"
               className="w-3/4 h-[550px] object-cover rounded-xl rounded-br-[50px] lg:rounded-br-[100px]"
             />
