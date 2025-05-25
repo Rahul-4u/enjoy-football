@@ -1,6 +1,8 @@
 import React from "react";
 import { FaCamera, FaPencilAlt, FaStar } from "react-icons/fa";
 import ImageGallery from "./ImageGallery";
+import { FaCampground } from "react-icons/fa";
+
 
 export default function ActivitySummary() {
   return (
@@ -75,25 +77,28 @@ export default function ActivitySummary() {
 
           <div className="flex flex-col items-center text-center">
             <span className="text-red-600 text-5xl mb-2">
-              <FaPencilAlt />
+              <FaCampground />
             </span>
             <h1 className="text-[27px] font-semibold mb-4">Campamentos</h1>
 
             <div
-              className="inline-block p-0.5  text-red-600 rounded z-0 shadow"
+              className="inline-block w-[250px] h-[250px] relative"
               style={{
-                backgroundImage: "url(https://i.ibb.co/qM2w22jw/mask-1.png)",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                filter:
-                  "invert(22%)  hue-rotate(15deg) brightness(130%) contrast(81%)",
+                backgroundColor: "#a87b4c",
+                WebkitMaskImage: "url('https://i.ibb.co/qM2w22jw/mask-1.png')",
+                maskImage: "url('https://i.ibb.co/qM2w22jw/mask-1.png')",
+                WebkitMaskSize: "cover",
+                maskSize: "cover",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+                maskPosition: "center",
               }}
             >
               <img
                 src="https://i.ibb.co/x8f9qNR7/campus.png"
-                alt="campus"
-                className="max-w-full h-auto rounded brightness-150 z-10"
+                alt="campus experience"
+                className="w-full h-full object-contain p-4"
               />
             </div>
           </div>
